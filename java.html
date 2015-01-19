@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="index.html">ALEXI CHOW</a>
+        </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="codesamples.html"><span class="glyphicon glyphicon-briefcase"></span> Code Samples</a></li>
+				<li><a href="resume.pdf"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+				<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Me</a></li>
+			</ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div class="container large-ptb">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 centered-text">
+				<h3><b>JAVA</b></h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="centered-text">	
+					<a href="#" class="project-title">Alpha-Beta Pruning Breakthrough Player (A.I.)</a><br><a href="https://github.com/alexichow/BreakthroughAIPlayer">Source Code</a>
+				</div>
+					<p><a href="http://en.wikipedia.org/wiki/Breakthrough_%28board_game%29">Breakthrough</a> is a game similar to Checkers with the variation that a
+					piece may move across the board one space either forward or diagonally forward. A piece can only 'capture' an opponents piece in a diagonally-forward move.
+					The first player to reach the other end of the board wins.</p>
+					<div class="centered-text"><img class="img-responsive center-block" src="assets/img/bt.png"/></div>
+					<p>My group of three created an artificial intelligence player that used multiple threads, alpha beta pruning, and an evaluation heuristic to determine the next best move. 
+					The A.I. player would receive board state information and calculate its next move by using our scoring heuristic. A potential move was scored by evaluating a piece's distance from the end of the board,
+					 if it could capture an opposing piece, and the number of remaining pieces for both sides after a capture occurred.<br>
+					 <br>Contribution: I helped develop and implement the evaluation heuristic used by our player in the BreakThroughMove.java file, helped implement the alphaBeta() method of AlphaBetaBreakThroughPlayer.java 
+					 and implemented the getMove() method of AlphaBetaBreakThroughPlayer.java which initially evaluates the game state for an immediate win condition and launches the threads for evaluating moves if a winning 
+					 move is not found.<br></p><br>
+				<div class="centered-text">	
+					<a href="#" class="project-title">Game of Life</a><br><a href="https://github.com/alexichow/GameOfLife">Source Code</a>
+				</div>
+					<p><a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a> is a zero-player "game" that accepts user input for an initial state and then simulates cellular evolution
+					according to the following set of rules:
+					<ol>
+						<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+						<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+						<li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+						<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+					</ol>
+					<div class="centered-text"><img class="img-responsive center-block" src="assets/img/gol.png"></div>
+					<br>My implementation makes use of Java's UI elements to create and display the board. Each cell is represented by an individual JPanel whose state is updated each generation 
+					based on the above rules.<br>
+					<br>My implementation has the following features:
+					<ul>
+						<li>Create an initial state by simply clicking on the 'cells' to mark them for life.</li>
+						<li>Display the current generation.</li>
+						<li>Start, stopping, resuming, and resetting during execution.</li>
+						<li>Taking screenshots (Creates folder for current session to store screenshots) </li>
+					</ul>
+					</p><br>
+				<!--
+				<div class="centered-text">
+					<a href="#" class="project-title">Minimum Scalar Product (Multithreading)</a><br>Source Code
+				</div>
+					<p>dddddddd<br>
+					<br>Java multithreading
+				-->
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer centered-text">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>LOCATION:</h4>
+					<p>
+						Poop<br>
+						Poop<br>
+						Poop<br>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Find Me</h4>
+					<p>
+						<a class="bottom" href="3">Twitter</a><br>
+						<a class="bottom" href="3">Twitter</a><br>
+						<a class="bottom" href="3">Twitter</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Contact Me</h4>
+					<p>asdfasdf asd afsd as as </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

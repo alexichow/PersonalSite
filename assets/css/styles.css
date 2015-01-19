@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	font-weight: 400;
+    font-size: 16px;
+	-webkit-overflow-scrolling: touch;
+	overflow-x:hidden;
+}
+
+.grey-background {
+	background-color: #f1f1f1;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.navbar-inverse {
+	text-transform: uppercase;
+	padding-bottom: 30px; /* 70 */
+	padding-top: 30px;
+	border-radius: 0px;
+	background-color: #6699FF;
+	border-color: #000000;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-left: 45px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.footer {
+	background-color: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+	color: white;
+	margin-top: 50px;
+}
+
+.mtb {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.ptb {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+/************************************************* MARGINS */
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.large-ptb {
+	padding-top: 90px;
+	padding-bottom: 25px;
+}
+
+.mlr {
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+h4 {
+	padding-bottom: 5px;
+}
+
+p {
+    padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p.description {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.project-title {
+	font-size: 20px;
+	font-weight: bold;
+    text-decoration:none;
+    pointer-events:none;
+	cursor:text;
+}
+
+a.bottom{
+	color:#6699FF;
+}
+
+hr {
+	border-width: 2px;
+	border-color: #d5dbdb;
+}
+
+/* ================== DYNAMICALLY RESIZE YOUTUBE VIDEOS ================== */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Code Samples</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<script>
+function imgLayover(img) {
+	img.style.height = "300px";
+	img.style.width  = "400px";
+	img.style.opacity = "0.75";
+	img.style.filter  = "alpha(opacity=20)";
+}
+
+function originalImage(img) {
+	img.style.height = this.height;
+	img.style.width  = this.width;
+}
+</script>
+
+<body>
+	<!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="index.html">ALEXI CHOW</a>
+        </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="codesamples.html"><span class="glyphicon glyphicon-briefcase"></span> Code Samples</a></li>
+				<li><a href="resume.pdf"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+				<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Me</a></li>
+			</ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div class="container large-ptb centered-text">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3><b>CODE SAMPLES</b></h3>
+				<hr>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container centered-text">
+		<div class="row mtb">
+			<div class="col-md-4 col-md-offset-2">
+				<a href="htmlcss.html"><img class="img-responsive" src="assets/img/htmlcss.jpg" onmouseover="imgLayover(src='assets/img/mag.jpg')" onmouseout="originalImage(src='assets/img/htmlcss.jpg')"/></a>
+				<p>HTML/CSS</p>
+			</div>
+			<div class="col-md-4">
+				<a href="java.html"><img class="img-responsive" src="assets/img/java.jpg" onmouseover="imgLayover(src='assets/img/mag.jpg')" onmouseout="originalImage(src='assets/img/java.jpg')"/></a>
+				<p>JAVA</p>
+			</div>
+		</div>
+		<div class="row mtb">
+			<div class="col-md-4 col-md-offset-2">
+				<a href="python.html"><img class="img-responsive" src="assets/img/python.jpg" onmouseover="imgLayover(src='assets/img/mag.jpg')" onmouseout="originalImage(src='assets/img/python.jpg')"/></a>
+				<p>PYTHON</p>
+			</div>
+			<div class="col-md-4">
+				<a href="cplusplus.html"><img class="img-responsive" src="assets/img/cplusplus.jpg" onmouseover="imgLayover(src='assets/img/mag.jpg')" onmouseout="originalImage(src='assets/img/cplusplus.jpg')"/></a>
+				<p>C++</p>
+			</div>
+		</div>
+		
+		<!--
+			<div class="col-lg-4">
+				<a href="#"><img class="img-responsive" src="assets/img/javascript.jpg" onmouseover="imgLayover(src='assets/img/mag.jpg')" onmouseout="originalImage(src='assets/img/javascript.jpg')"/></a>
+				<p>JAVASCRIPT</p>
+			</div>
+			<div class="col-lg-4">
+				<a href="#"><img class="img-responsive" src="assets/img/cplusplus.jpg"/></a>
+				<p>POOP</p>
+			</div>
+		</div>
+		-->
+	</div>
+	
+	<div class="footer centered-text">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>LOCATION:</h4>
+					<p>
+						902 Arrowhead Dr.<br>
+						Oxford, OH<br>
+						45056<br>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Find Me</h4>
+					<p>
+						<a class="bottom" href="3">Google Code</a><br>
+						<a class="bottom" href="3">GitHub</a><br>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Contact Me</h4>
+					<p><a href="/contact.html">Email</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+	
+</body>
+
+</html>

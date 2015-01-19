@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML/CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="index.html">ALEXI CHOW</a>
+        </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="codesamples.html"><span class="glyphicon glyphicon-briefcase"></span> Code Samples</a></li>
+				<li><a href="resume.pdf"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+				<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Me</a></li>
+			</ul>
+        </div>
+      </div>
+    </nav>
+
+	<div class="container large-ptb">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 centered-text">
+				<h3><b>HTML/CSS</b></h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="centered-text">	
+					<a href="#" class="project-title">Personal Website</a><br>HTML, CSS, JavaScript, Bootstrap, PHP<br>Source Code &#8226; Source
+				</div>
+					<p>I recreated a portfolio design I really liked from scratch using Twitter Bootstrap. The sire features responsive, dynamically resizing of elements using Twitter Bootstrap. It provides a homepage for my programming
+					projects, resume, and includes a contact form written in PHP.</p><br>
+					
+				<div class="centered-text">	
+					<a href="#" class="project-title">SMITE God Builds</a><br>HTML, CSS, Bootstrap, Java, JavaScript, PHP<br><a href="https://github.com/alexichow/SmiteBuilds">HTML/CSS/PHP Source Code</a> &#8226; <a href="https://github.com/alexichow/SmiteBuildsJavaBackend">Java Source Code</a> &#8226; <a href="smitegods.html">Live Site</a>
+				</div>
+					<p><a href="http://www.hirezstudios.com/smite">SMITE</a>, by Hi-Rez Studios, is an online multiplayer game in which players choose from a wide selection of Gods and compete in 5v5 team matches.<br>
+					<br>One of the core mechanics of the game is that players spend money accrued throughout the match to purchase items that increase their God's power. Each God is distinctly unique from the others and there
+					are many things to consider when buying items (known as creating a build).
+					<br>There are currently a few different sites which allow players to create guides for the different Gods, such as <a href="http://www.smitefire.com/smite/guides">smitefire.com</a> and <a href="http://tiermonster.com/guides">tiermonster.com</a>,
+					but there are none that utilize in-game data to create the most optimal builds.<br>
+					<br>I decided I wanted to make a site that collected data from the highest level of play, and to use this information to find the most popular build for each character. After I received developer access from Hi-Rez
+					Studios, I decided on the following implementation:
+					<ol>
+						<li>My Java program requests player data from the SMITE API in JSON format and sorts/stores the relevant data from recent matches. For each God, I find the most-bought item for each item slot 
+						and create a text file that contains the complete item build for that God (60 total as of now). The text files are then uploaded to the web server.</li>
+						<li>From the build website, the user can select the god they would like item information for. Using PHP and GET variables, the God they select will pass their name to the actual build page.</li>
+						<li>The build page receives the God name and opens the relevant text file containing the item build. The page finds each item listed and displays their name and icon on the build page.</li>
+					</ol>
+					I wanted to create a site like this because it uses actual in-game data from professional players to create the builds. These are the players who understand the game at the highest level of play and I felt as though this
+					was a great way to see how they are building their characters.<br>
+					</p><br>
+		
+				<div class="centered-text">	
+					<a href="#" class="project-title">Myaamia Project Body Parts (Language Learning)</a><br>HTML, CSS, JavaScript<br><a href="https://github.com/alexichow/MyaamiaProjectBodyParts">Source Code</a> &#8226; <a href="BodyParts/Main_Page_Torso.html">Demo Site</a> &#8226; <a href="http://www.myaamiacenter.org/MCResources/modules/cse/bodyparts2012/">Live Site</a>
+				</div>
+					<p>Worked with a small team of four to create a prototype for the Myaamia Project's language learning website.<br>
+					<br>This project was completed with direct input and feedback from Miami Tribe members at Miami University. The task was to create a website that promoted language learning through three phases:
+					<ol>
+						<li>Observe (Watch and listen to audio playback)</li>
+						<li>Try (Interact with application and receive feedback)</li>
+						<li>Test (Test knowledge gained from previous sections)</li>
+					</ol>
+					Our design was selected to be used as the base for the finalized website, which can be viewed here.<br>
+					<br>Contributions: Helped our main CSS designer, James Fields, develop the CSS for the home page. Developed the Javascript for the 'Try' and 'Test' pages.
+					</p><br>
+
+				<div class="centered-text">
+					<a href="#" class="project-title">'Niiki' iOS App Companion Website</a><br>HTML, CSS, JavaScript<br>
+					<a class="bottom" href="https://itunes.apple.com/us/app/niiki/id556959855?mt=8">iOS app</a> &#8226; 
+					<a class="bottom" href="http://www.myaamiacenter.org/MCResources/modules/niiki/">Live Site</a>
+				</div>
+					<p>To complement my Senior Design Project group's iOS application created for the Myaamia Project, I was tasked with creating a companion website.<br>
+					<br>The goal of providing the website in addition to the application was to provide families interested in learning the Miami language with the same resources made available through the app.
+					Not all families have iOS devices, let alone smartphones, so it was important to us to be able to offer them at least some learning materials. The other goal was to host 
+					the PDF files which contain the QR codes used by the application in an easily accessible website.<br>
+					<br>The site features various words and phrases for different room in the house. It utilizes HTML5 audio playback capabilities to play the audio files and supports Internet Explorer, Chrome, Firefox, and Safari web browsers.<br>
+					<br>More information on our app can be found here: <a href="http://myaamiacenter.org/?page_id=231">Myaamia Center.</a>
+			</div>		
+		</div>
+	</div>
+	<div class="footer centered-text">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>LOCATION:</h4>
+					<p>
+						Poop<br>
+						Poop<br>
+						Poop<br>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Find Me</h4>
+					<p>
+						<a class="bottom" href="3">Twitter</a><br>
+						<a class="bottom" href="3">Twitter</a><br>
+						<a class="bottom" href="3">Twitter</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>Contact Me</h4>
+					<p>asdfasdf asd afsd as as </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
